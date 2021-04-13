@@ -151,7 +151,7 @@ border: 1px solid black;
         $reverselookup = (Resolve-DnsName $IPaddress).NameHost
         $ervdb = ($erv).ToLower().replace("wap", "wdb")
         $ervdb = $ervdb -replace ".{2}$"
-        $ervdb = $ervdb + "01" + ".krft.net"
+        $ervdb = $ervdb + "01" + ".domain.net"
         $telnet = (Test-NetConnection -ComputerName $ervdb -Port 1433)
         $sqlConn = New-Object System.Data.SqlClient.SqlConnection
         $sqlConn.ConnectionString = â€œServer=$evrdb; Integrated Security=true; Initial Catalog=masterâ€
@@ -168,7 +168,7 @@ border: 1px solid black;
         $adp.Fill($data) | Out-Null
         $clusterfeature = Get-WindowsFeature -Name "Failover-Clustering" -ComputerName $erv
     
-        $ser = [system.directoryservices.directorysearcher]"LDAP://dc=krft,dc=net"
+        $ser = [system.directoryservices.directorysearcher]"LDAP://dc=domain,dc=net"
         $ser.Filter = "(&(objectclass=computer)(name=$erv))"
         $res = $ser.FindAll()
     
@@ -192,7 +192,7 @@ border: 1px solid black;
             }
         }
     
-        $ou = "/krft.Net/" + $ou
+        $ou = "/domain.Net/" + $ou
         $ou = $ou.substring(0, ($ou.Length - ($ou.split("/")[-2]).length - 2) )
     
     
@@ -555,7 +555,7 @@ border: 1px solid black;
             ConvertTo-Html -Fragment 
 
         #SAP Kernel
-        $SAPKERNEL = (Get-Item '\\krft.net\sapmnt\EAS\SYS\exe\uc\NTAMD64\DISP+WORK.exe').VersionInfo | Select-Object ProductName, ProductVersion, FileName | `
+        $SAPKERNEL = (Get-Item '\\domain.net\sapmnt\EAS\SYS\exe\uc\NTAMD64\DISP+WORK.exe').VersionInfo | Select-Object ProductName, ProductVersion, FileName | `
             ConvertTo-Html -Fragment 
                     
 
