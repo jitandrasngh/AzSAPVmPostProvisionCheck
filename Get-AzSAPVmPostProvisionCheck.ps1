@@ -811,3 +811,4 @@ function Invoke-IsIPAddressInSubnet {
     
     return $status
 }
+Get-AzSAPVmPostProvisionCheck -File "C:\servers.txt" -ExportPath "C:\Output"
