@@ -1,6 +1,6 @@
 ## AzSAPVmPostProvisionCheck
 It is the SAP On Azure Windows/SQL Server config check script.
-###Initial Version#0
+### Initial Version#0
 Version#0 [current version] is a simple SAP On Azure Checks targetting target OS Windows Server & database SQL Server.
 The script runs on the local server and collects critical checks that impacts the functioning of SAP On Azure.
 The out is html that must be reviewed by the Customer/Partner SAP Team member.
