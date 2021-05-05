@@ -11,4 +11,4 @@ The Checks includes
 3. SQL Server Checks
 4. SAP Registry Checks
 
-We are working to enhance the report, and script will be updated in few weeks.
+I am working to enhance the report and will be updated frequently.
