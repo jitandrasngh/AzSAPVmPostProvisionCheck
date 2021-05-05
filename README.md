@@ -12,3 +12,10 @@ The Checks includes
 4. SAP Registry Checks
 
 I am working to enhance the report and will be updated frequently.
+
+### How to use the script
+1. Create a servers.txt and add server name to the "servers.txt" file.
+2. Execute tha attached script, it will install the function Get-AzSAPVmPostProvisionCheck
+3. Execute the syntax 
+Get-AzSAPVmPostProvisionCheck -File "C:\servers.txt" -ExportPath "C:\Output"
+4. Report will be generated as HTML file under C:\Temp\SAP_On_Azure_Checks on server where script is executed.
