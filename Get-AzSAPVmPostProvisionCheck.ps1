@@ -16,7 +16,7 @@ Function Get-AzSAPVmPostProvisionCheck {
         
 
     .EXAMPLE
-        Get-AzSAPVmPostProvisionCheck -File "C:\servers.txt" -ExportPath "C:\Output.xlsx"
+        Get-AzSAPVmPostProvisionCheck -File "C:\servers.txt" -ExportPath "C:\Temp\SAP_On_Azure_Checks\"
 
     .NOTES
 #>
