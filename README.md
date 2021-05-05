@@ -1,4 +1,4 @@
-# AzSAPVmPostProvisionCheck
+## AzSAPVmPostProvisionCheck
 Scripts to check SAP On Azure Checks
 Initial Version#0
 Version#0 [current version] is a simple SAP On Azure Checks targetting target OS Windows Server & database SQL Server.
